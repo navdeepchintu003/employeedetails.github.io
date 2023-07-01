@@ -1,0 +1,40 @@
+<div class="header">
+  <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <div class="logo">
+      <img src="em.jpg" style="width: auto; height: 50px" />
+    </div>
+    <a class="navbar-brand info" href="#">EmployeeInfo</a>
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a routerLink="employeelist" routerLinkActive="active" class="nav-link"
+          >Employee List</a
+        >
+      </li>
+      <li class="nav-item">
+        <a routerLink="addemployee" routerLinkActive="active" class="nav-link"
+          >Add Employee</a
+        >
+      </li>
+      <li class="nav-item">
+        <a routerLink="login" routerLinkActive="active" class="nav-link"
+          >Login</a
+        >
+      </li>
+      <li class="nav-item">
+        <a routerLink="register" routerLinkActive="active" class="nav-link"
+          >SignUp</a
+        >
+      </li>
+    </ul>
+  </nav>
+
+  <h1 class="text-center">{{ title }}</h1>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <span>Work Hard and Never Expect Results</span>
+    </div>
+  </footer>
+</div>
